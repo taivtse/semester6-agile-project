@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/UDPM.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Chương trình Java đầu tiên Hello World</h1>
+        <p>Chương này, chúng ta sẽ học cách viết một chương trình Java đơn giản. Trước khi viết chương trình Hello
+            World, bạn nên cài đặt trước JDK.</p>
+        <p>Để tạo một chương trình Java đơn giản, bạn cần tạo một lớp chứa phương thức main. Để thực thi bất cứ chương
+            trình Java nào, bạn cần:</p>
+        <p><b>Platform:</b> Bất cứ môi trường phần cứng hoặc phần mền nào mà trong đó một chương trình chạy, thì được
+            biết đến như là một Platform. Với môi trường runtime riêng cho mình là JRE và API, Java được gọi là
+            Platform.</p>
+        <p>Cài đặt JDK nếu bạn chưa cài đặt nó. Bạn <a class="link-download" href=""><b>tải JDK</b></a>, và cài đặt.</p>
+        <p>Thiết lập path của thư mục jdk/bin. (Bạn có thể tham khảo bài trước)</p>
+        <p>Tạo chương trình Java.</p>
+        <p>Biên dịch và chạy chương trình Java.</p>
+        <br />
+
+        <h2>Tạo ví dụ Hello World</h2>
+        <p>Bạn theo dõi ví dụ để viết chương trình Hello World:</p>
+        <img src="./code_img_2/1.JPG" alt="hình ảnh thiết lập path">
+
+        <p>Sau đó, bạn lưu file dưới tên <b>Simple.java.</b></p>
+        <p>Để biên dịch, bạn gõ: <b>javac Simple.java</b></p>
+        <p>Để thực thi, bạn gõ: <b>java Simple</b></p>
+        <br />
+
+        <h2>Phân tích chi tiết chương trình Java đầu tiên</h2>
+        <p>Dưới đây, chúng tôi sẽ giúp bạn hiểu ý nghĩa của class, public, static, void, main, String[],
+            System.out.println().</p>
+        <p>Từ khóa <b>class</b> được sử dụng để khai báo một lớp trong Java.</p>
+        <p>Từ khóa <b>public</b> là một Access Modifier mà biểu diễn tính nhìn thấy, nghĩa rằng nó là nhìn nhất với tất
+            cả.</p>
+        <p><b>static</b> là một từ khóa, mà nếu chúng ta khai báo bất cứ phương thức nào là static thì nó còn được gọi
+            là phương thức tĩnh hoặc phương thức static. Lợi thế chủ yếu của phương thức static là không cần thiết tạo
+            đối tượng để triệu hồi phương thức static. Phương thức main được thực thi bởi JVM, vì thế bạn không cần
+            thiết tạo một đối tượng để gọi phương thức main. Việc này giúp tiết kiệm bộ nhớ.</p>
+        <p><b>void</b> là kiểu trả về của phương thức, nghĩa là phương thức không trả về bất cứ giá trị nào.</p>
+        <p><b>main</b> tượng trưng cho khởi động chương trình.</p>
+        <p><b>String[] args</b> được sử dụng cho tham số dòng lệnh. Bạn sẽ tìm hiểu về chúng sau.</p>
+        <p><b>System.out.println()</b> được sử dụng như là lệnh in. Chương sau, bạn sẽ thấy cách làm việc nội tại của
+            lệnh System.out.println này.</p>
+        <p>Để viết một chương trình đơn giản, bạn mở notepad bởi <b>Start menu</b> -> <b>All Programs</b> ->
+            <b>Accessories</b> -> <b>notepad</b> và viết chương trình đơn giản Hello World trên.</p>
+        <p>Viết và lưu chương trình dưới dạng Simple.java. Để biên dịch và chạy chương trình này, bạn cần mở dòng nhắc
+            lệnh command prompt bởi <b>Start menu</b> -> <b>All Programs</b> -> <b>Accessories</b> -> <b>command
+                prompt</b>.</p>
+        <p>Để biên dịch và chạy chương trình, đầu tiên bạn vào thư mục hiện tại, với mình đó là c:\new. Viết ở đây:</p>
+        <p>Để biên dịch, gõ: <b>javac Simple.java</b></p>
+        <p>Để thực thi, gõ: <b>java Simple</b></p>
+        <br />
+
+        <h2>Bạn có bao nhiêu cách để viết một chương trình Java</h2>
+        <p>Có nhiều cách để viết một chương trình Java. Các sửa đổi có thể được thực hiện trong chương trình Java như
+            sau:</p>
+        <p>Thứ nhất bằng việc thay đổi dãy sắp xếp của Modifier, thì nguyên mẫu phương thức không bị thay đổi. Bạn theo
+            dõi phần code đơn giản của phương thức main:</p>
+        <img src="./code_img_2/2.JPG" alt="hình ảnh thiết lập path">
+        <p>Thứ hai, ký hiệu chỉ số dưới [] trong Mảng Java có thể được sử dụng sau kiểu, ở trước biến hoặc đằng sau
+            biến. Bạn theo dõi các code khác nhau để viết phương thức main:</p>
+        <img src="./code_img_2/3.JPG" alt="hình ảnh thiết lập path">
+        <p>Thứ ba, bạn có thể cung cấp sự hỗ trợ var-args tới phương thức main bằng cách truyền 3 dấu chấm. Bạn theo dõi
+            code đơn giản sau sử dụng var-args trong phương thức main. Chúng ta sẽ học về var-args trong chương Các đặc
+            điểm mới trong Java.</p>
+        <img src="./code_img_2/4.JPG" alt="hình ảnh thiết lập path">
+
+        <p>Thứ tư, việc có hay không dấu chấm phảy ở phần cuối của lớp trong Java là tùy ý. Bạn theo dõi code sau:</p>
+        <img src="./code_img_2/5.JPG" alt="hình ảnh thiết lập path">
+        <p>Một số phương thức main hợp lệ trong Java:</p>
+        <img src="./code_img_2/6.JPG" alt="hình ảnh thiết lập path">
+        <p>Một số phương thức main không hợp lệ trong Java:</p>
+        <img src="./code_img_2/7.JPG" alt="hình ảnh thiết lập path">
+
+        <br />
+        <br />
+
+        <h2>Giải quyết lỗi "javac is not recognized as an internal or external command"</h2>
+        <p>Nếu xuất hiện một vấn đề như được hiển thị trong hình dưới, thì điều bạn cần làm là thiết lập path. Vì DOS
+            không biết javac hoặc java, do đó chúng ta cần thiết phải thiết lập path. Path là không cần thiết trong
+            những trường hợp mà nếu bạn lưu chương trình bên trong thư mục jdk/bin. Nhưng đôi khi, đây là điều bạn cần
+            biết để có thể xử lý các trường hợp có thể xảy ra. Bạn theo dõi phần này tại <b>Cách thiết lập path trong
+                Java</b>. </p>
+        <img class="img-tutorial" src="./code_img_2/8.JPG" alt="hình ảnh thiết lập path">
+
+    </div>
+</body>
+
+</html>

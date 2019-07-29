@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/UDPM.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Toán tử, vòng lặp và rẽ nhánh trong Java</h1>
+        <br />
+
+        <h2>Toán tử trong Java</h2>
+        <p>Java cung cấp rất nhiều toán tử đa dạng để thao tác với các biến. Chúng ta có thể chia tất cả các toán tử trong Java thành các nhóm sau:</p>
+        <br />
+        <p>Toán tử số học</p>
+        <p>Toán tử quan hệ</p>
+        <p>Toán tử thao tác bit</p>
+        <p>Toán tử logic</p>
+        <p>Toán tử gán</p>
+        <p>Và các toán tử hỗn hợp</p>
+        <br />
+
+        <h2>Toán tử số học trong Java</h2>
+        <p>Các toán tử số học được sử dụng trong các biểu thức toán học theo cách tương tự như chúng được sử dụng trong đại số học. Bảng sau liệt kê các toán tử số học trong Java.</p>
+        <p>Giả sử biến A giữ giá trị 10, biến B giữ giá trị 20, thì:</p>
+        <p><b>Ví dụ</b></p>
+        <img src="./code_img_4/1.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Toán tử quan hệ trong Java</h2>
+        <p>Bảng dưới liệt kê các toán tử quan hệ được hỗ trợ bởi Java.</p>
+        <p>Giả sử biến A giữ giá trị 10, biến B giữ giá trị 20, thì:</p>
+        <p><b>Ví dụ</b></p>
+        <img src="./code_img_4/2.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Toán tử thao tác bit trong Java</h2>
+        <p>Java định nghĩa một số toán tử thao tác bit có thể được áp dụng cho các kiểu giá trị integer, long, int, short, char, và byte.</p>
+        <p>Toán tử thao tác bit làm việc trên các bit. Giả sử nếu a = 60 và b = 13, thì trong định dạng nhị phân chúng sẽ như sau:</p>
+        <p>a = 0011 1100</p>
+        <p>b = 0000 1101</p>
+        <p>-----------------</p>
+        <p>a&b = 0000 1100</p>
+        <p>a|b = 0011 1101</p>
+        <p>a^b = 0011 0001</p>
+        <p>~a  = 1100 0011</p>
+        <p>Bảng dưới đây liệt kê các toán tử bit được hỗ trợ trong Java:</p>
+        <p>Giả sử biến A giữ giá trị 60 và biến B giữ 13 thì khi đó:</p>
+        <p><b>Ví dụ</b></p>
+        <img src="./code_img_4/3.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Toán tử logic trong Java</h2>
+        <p>Bảng dưới liệt kê đầy đủ các toán tử logic trong Java:</p>
+        <p>Giả sử biến A giữ true và biến B giữ false thì khi đó:</p>
+        <p><b>Ví dụ</b></p>
+        <img src="./code_img_4/4.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Các toán tử gán trong Java</h2>
+        <p>Dưới đây liệt kê các toán tử gán được hỗ trợ bởi Java:</p>
+        <p><b>Ví dụ</b></p>
+        <img src="./code_img_4/5.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Toán tử hỗn hợp trong Java</h2>
+        <p>Ngôn ngữ Java cũng hỗ trợ một số toán tử hỗn hợp khác.</p>
+        <br />
+        
+        <h2>Toán tử điều kiện (? :)</h2>
+        <p>Toán tử này gồm ba toán hạng và được sử dụng để ước lượng các biểu thức quan hệ. Mục tiêu của toán tử là quyết định giá trị nào sẽ được gán cho biến. Toán tử này được viết như sau:</p>
+        <img src="./code_img_4/6.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Tất nhiên, bạn không cần thiết phải sử dụng các dấu ngoặc đơn như trên. Mình viết như vậy để giúp các bạn dễ nhìn hơn. Sau đây là ví dụ minh họa toán tử điều kiện (? :) trong Java:</p>
+        <img src="./code_img_4/7.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho kết quả sau:</p>
+        <img src="./code_img_4/8.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Toán tử instanceof trong Java</h2>
+        <p>Toán tử này chỉ được sử dụng cho các biến tham chiếu đối tượng. Toán tử kiểm tra có hay không đối tượng là một kiểu cụ thể (kiểu class hoặc kiểu interface). Toán tử instanceof được viết như sau:</p>
+        <img src="./code_img_4/9.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Toán tử trả về true nếu toán hạng trái là biến thể hiện của toán hạng phải. Ví dụ:</p>
+        <img src="./code_img_4/10.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho kết quả:</p>
+        <img src="./code_img_4/11.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Toán tử này sẽ cũng trả về true nếu đối tượng đang được so sánh là tham số tương thích với kiểu toán hạng phải. Dưới đây là một ví dụ khác:</p>
+        <img src="./code_img_4/12.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho kết quả:</p>
+        <img src="./code_img_4/13.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Thứ tự ưu tiên của các toán tử trong Java:</h2>
+        <p>Thứ tự ưu tiên của các toán tử xác định cách biểu thức được tính toán. Ví dụ: toán tử nhân có quyền ưu tiên hơn toán tử cộng.</p>
+        <p>Ví dụ, x = 7 + 3 * 2; ở đây, x được gán giá trị 13, chứ không phải 20 bởi vì toán tử * có quyền ưu tiên cao hơn toán tử +, vì thế đầu tiên nó thực hiện phép nhân 3 * 2 và sau đó thêm với 7.</p>
+        <p>Bảng dưới đây liệt kê thứ tự ưu tiên của các toán tử. Các toán tử với quyền ưu tiên cao nhất xuất hiện trên cùng của bảng, và các toán tử có quyền ưu tiên thấp nhất thì ở bên dưới cùng của bảng. Trong một biểu thức, các toán tử có quyền ưu tiên cao nhất được tính toán đầu tiên.</p>
+        <img src="./code_img_4/14.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        
+        <h2>Vòng lặp trong Java</h2>
+        <p>Có thể có một tình huống khi chúng ta cần thực hiện một khối code một vài lần, điều này có thể được xem như một vòng lặp.</p>
+        <p>Java có 3 kỹ thuật lặp linh động. Bạn có thể sử dụng một trong ba vòng lặp sau:</p>
+        <br />
+        <p>Vòng lặp while</p>
+        <p>Vòng lặp do…while</p>
+        <p>Vòng lặp for</p>
+        <br />
+        <p>Trong Java 5, vòng lặp foreach (hay enhanced for) đã được giới thiệu. Vòng lặp này được sử dụng chủ yếu cho các mảng.</p>
+        <img src="./code_img_4/15.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Các lệnh điều khiển vòng lặp trong Java</h2>
+        <p>Câu hỏi đặt ra là nếu giả sử trong một vòng lặp tại một điều kiện cụ thể nào đó, bạn muốn dừng thực thi hoặc tiếp tục thực thi vòng lặp đó, bạn sử dụng cách nào. Cũng như các ngôn ngữ lập trình khác, Java hỗ trợ các lệnh giúp bạn điều khiển và kiểm soát vòng lặp.</p>
+        <p>Bảng dưới liệt kê các lệnh được sử dụng để điều khiển vòng lặp mà Ngôn ngữ lập trình Java hỗ trợ:</p>
+        <img src="./code_img_4/16.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Lệnh IF/ELSE, Lệnh SWITCH/CASE trong Java</h2>
+        <p>Như các ngôn ngữ lập trình khác, ngôn ngữ Java cũng hỗ trợ cấu trúc điều khiển luồng. Với cấu trúc này, chương trình sẽ kiểm tra một hoặc nhiều điều kiện và nếu các điều kiện này là <b>true</b>, thì lệnh hoặc các lệnh tương ứng với điều kiện true này sẽ được thực hiện, nếu không thì các lệnh tương ứng với điều kiện <b>false</b> sẽ được thực thi.</p>
+        <p>Bảng dưới đây liệt kê các lệnh giúp bạn điều khiển luồng trong Java. Các lệnh đó là:</p>
+        <img src="./code_img_4/17.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+        
+        <h2>Toán tử điều kiện (? :) trong Java</h2>
+        <p>Ngoài các lệnh kể trên, ngôn ngữ Java còn có một loại toán tử điều kiện giúp bạn kiểm tra nhanh các điều kiện và thực hiện phép gán giá trị cho một biến một cách rất nhanh chóng.</p>
+        <p>Toán tử này gồm ba toán hạng và được sử dụng để ước lượng các biểu thức quan hệ. Mục tiêu của toán tử là quyết định giá trị nào sẽ được gán cho biến. Toán tử này được viết như sau:</p>
+        <img src="./code_img_4/18.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Tất nhiên, bạn không cần thiết phải sử dụng các dấu ngoặc đơn như trên. Mình viết như vậy để giúp các bạn dễ nhìn hơn. Sau đây là ví dụ minh họa toán tử điều kiện (? :) trong Java:</p>
+        <img src="./code_img_4/19.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho kết quả sau:</p>
+        <img src="./code_img_4/20.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Chương tiếp theo bàn về chủ đề gì trong Java?</h2>
+        <p>...</p>
+
+    </div>
+</body>
+</html>

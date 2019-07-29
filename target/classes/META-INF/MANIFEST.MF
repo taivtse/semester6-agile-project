@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: deimi
+Build-Jdk: 11.0.2
+Implementation-Title: dght003
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.sol
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/dght003
+Created-By: Maven Integration for Eclipse
+

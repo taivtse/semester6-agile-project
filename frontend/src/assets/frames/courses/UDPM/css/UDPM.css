@@ -1,0 +1,18 @@
+.wrap {
+    padding: 1em 2em;
+}
+
+.img-tutorial {
+    width: 80%;
+}
+
+.wrap-img-tutorial {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link-download {
+    color: #28a745 !important;
+}

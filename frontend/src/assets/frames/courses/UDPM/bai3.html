@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/UDPM.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Biến và kiểu dữ liệu trong Java</h1>
+        <br />
+        <h2>Các kiểu biến trong Java</h2>
+        <p>Ở bài này, chúng ta cùng tìm hiểu về các kiểu biến trong Java. Biến là tên một khu nhớ. Có ba kiểu biến: biến cục bộ (còn gọi là biến local), thuộc tính (biến của instance- đối tượng) và biến static.</p>
+        <p>Bạn phải khai báo tất cả các biến trước khi chúng có thể được sử dụng. Form cơ bản của một khai báo biến như sau:</p>
+        <img src="./code_img_3/1.JPG" alt="hình ảnh thiết lập path">
+        <p>Ở đây, <i>kieu_du_lieu</i> là một kiểu dữ liệu của Java và <i>bien</i> là tên của biến. Để khai báo nhiều hơn một biến với kiểu cụ thể, bạn có thể sử dụng một danh sách biến phân biệt nhau bởi dấu phảy.</p>
+        <p>Dưới đây là ví dụ về khai báo và khởi tạo biến hợp lệ trong Java:</p>
+        <img src="./code_img_3/2.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Biến local trong Java</h2>
+        <p>Các biến được khai báo trong các phương thức, constructor, hoặc khối.</p>
+        <p>Các biến được tạo khi phương thức, constructor hoặc khối được nhập và biến bị hủy khi phương thức, constructor hoặc khối kết thúc.</p>
+        <p>Chỉ định truy cập (access modifier) có thể không được sử dụng cho các biến local.</p>
+        <p>Các biến local chỉ nhìn thấy trong phương thức, constructor, hoặc khối được khai báo.</p>
+        <p>Các biến local được thực thi nội bộ.</p>
+        <p>Không có giá trị mặc định nào cho các biến local, vì thế các biến local nên được khai báo và một giá trị khởi tạo nên được gán trước khi sử dụng.</p>
+        <br />
+
+        <h2>Ví dụ:</h2>
+        <p>Ở đây, <i>tuoi</i> là biến local. Nó được định nghĩa bên trong phương thức <i>tuoiCon()</i> và phạm vi của nó được giới hạn chỉ trong phương thức này.</p>
+        <img src="./code_img_3/3.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho một lỗi sau trong khi biên dịch:</p>
+        <img src="./code_img_3/4.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Thuộc tính (hay biến instance) trong Java</h2>
+        <p>Các thuộc tính được khai báo trong một lớp, nhưng ở bên ngoài một phương thức, constructor hoặc bất kỳ khối nào.</p>
+        <p>Khi một không gian nhớ được cấp phát cho một đối tượng trong một heap (một dạng cấu trúc hàng đợi có thứ tự ưu tiên), một slot cho mỗi giá trị thuộc tính được tạo ra.</p>
+        <p>Các thuộc tính được tạo khi một đối tượng được tạo bởi sử dụng từ khóa new và bị hủy khi đối tượng bị hủy.</p>
+        <p>Các thuộc tính giữ các giá trị mà phải được tham chiếu bởi nhiều hơn một phương thức, constructor hoặc khối, hoặc các phần chủ yếu của trạng thái đối tượng mà phải có mặt xuyên suốt lớp đó.</p>
+        <p>Các thuộc tính có thể được khai báo trong mức độ lớp trước hoặc sau khi sử dụng.</p>
+        <p>Chỉ định truy cập (access modifier) có thể được cung cấp cho các thuộc tính.</p>
+        <p>Các thuộc tính là nhìn thấy với tất cả các phương thức, constructor, và khối trong lớp. Tuy nhiên, tính nhìn thấy cho các lớp phụ có thể được cung cấp cho những biến này với sự sử dụng của chỉ định truy cập.</p>
+        <p>Các thuộc tính có các giá trị mặc định. Với các số, giá trị mặc định là 0, với Boolean là false và với đối tượng là null. Các giá trị có thể được gán trong khi khai báo hoặc trong constructor.</p>
+        <p>Các thuộc tính có thể được truy cập một cách trực tiếp bởi việc gọi tên biến bên trong lớp đó. Tuy nhiên, với các phương thức static và các lớp khác nhau (khi thuộc tính được cung cấp khả năng truy cập), nó nên được gọi bởi sử dụng tên đầy đủ hợp lệ như sau: <i>ObjectReference.VariableName</i>.</p>
+        <br />
+
+        <h2>Ví dụ:</h2>
+        <img src="./code_img_3/5.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Nó sẽ cho kết quả sau:</p>
+        <img src="./code_img_3/6.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <br />
+
+        <h2>Các biến Class/static trong Java:</h2>
+        <p>Các biến class cũng được biết như là các biến static được khai báo với từ khóa static trong một lớp, nhưng ở bên ngoài một phương thức, constructor hoặc một khối.</p>
+        <p>Sẽ chỉ có một bản sao của mỗi biến class cho mỗi lớp, bất chấp việc bao nhiêu đối tượng được tạo từ nó.</p>
+        <p>Các biến static hiếm khi được sử dụng, ngoài việc được khai báo như là các hằng số. Các hằng số là các biến, mà được khai báo như là các biến static, biến final, biến chung/riêng. Các biến hằng số không bao giờ thay đổi từ giá trị khởi tạo của chúng.</p>
+        <p>Các biến static được lưu giữ trong bộ nhớ static.</p>
+        <p>Các biến static được tạo khi chương trình bắt đầu và bị hủy khi chương trình kết thúc.</p>
+        <p>Tính nhìn thấy là tương tự như các thuộc tính. Tuy nhiên, hầu hết biến static được khai báo chung khi chúng phải là có sẵn cho việc sử dụng của lớp.</p>
+        <p>Giá trị mặc định là giống với các thuộc tính. Với các số, giá trị mặc định là 0; với Boolean là false, và với đối tượng là null. Các giá trị có thể được gán trong khi khai báo hoặc trong constructor. Ngoài ra, các giá trị có thể được gán trong các khối khởi tạo static đặc biệt.</p>
+        <p>Các biến static có thể được truy cập bởi việc gọi tên lớp: <i>ClassName.VariableName</i>.</p>
+        <p>Khi khai báo các biến class như public static final, thì các tên biến ở dạng chữ hoa. Nếu các biến static không là public và final, thì cú pháp đặt tên giống với các biến local và thuộc tính.</p>
+        <br />
+
+        <h2>Ví dụ:</h2>
+        <img src="./code_img_3/7.JPG" alt="hình ảnh thiết lập path">
+        <p>Nó sẽ cho kết quả sau:</p>
+        <img src="./code_img_3/8.JPG" alt="hình ảnh thiết lập path">
+        <p><b>Ghi chú:</b> Nếu các biến được truy cập từ lớp bên ngoài, hằng số nên được truy cập như ở dạng: Student.FACULTY</p>
+        <br />
+        
+        <h2>Kiểu dữ liệu trong Java</h2>
+        <p>Các biến là không gì khác ngoài các vị trí bộ nhớ dành riêng để lưu các giá trị. Nghĩa là, khi bạn tạo một biến, bạn dự trữ một số không gian trong bộ nhớ.</p>
+        <p>Dựa trên kiểu dữ liệu của một biến, hệ điều hành cấp phát bộ nhớ và quyết định cái gì có thể được lưu giữ trong bộ nhớ dành riêng. Vì thế, bằng việc gán các kiểu dữ liệu khác nhau tới các biến, bạn có thể lưu giữ integer, thập phân, hoặc các ký tự trong những biến này.</p>
+        <p>Có hai kiểu dữ liệu có sẵn trong Java:</p>
+        <p>Các kiểu dữ liệu gốc (Primitive)</p>
+        <p>Các kiểu dữ liệu tham chiếu/đối tượng (không phải kiểu gốc Non-primitive)</p>
+        <div class="wrap-img-tutorial">
+            <img class="img-tutorial" src="./code_img_3/9.jfif" alt="hình ảnh thiết lập path">
+        </div>
+        <br />
+        <p>Trước khi đi vào giới thiệu chi tiết về từng kiểu dữ liệu, bạn có thể theo dõi bảng tóm tắt sau:</p>
+        <img src="./code_img_3/10.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p><b>Câu hỏi:</b> Tại sao char sử dụng 2 byte trong Java và \u0000 là gì?</p>
+        <p>Bởi vì Java sử dụng Unicode chứ không phải ASCII. \u0000 là dãy thấp nhất trong Unicode.</p>
+        <br />
+
+        <h2>Các kiểu dữ liệu gốc trong Java</h2>
+        <p>Có 8 kiểu dữ liệu gốc được hỗ trợ bởi Java. Các kiểu dữ liệu gốc này được tiền định nghĩa bởi ngôn ngữ và được định danh bởi một từ khóa. Dưới đây là chi tiết về 8 kiểu dữ liệu gốc này:</p>
+        <br />
+
+        <h2>char:</h2>
+        <p>Dùng để lưu dữ liệu kiểu kí tự hoặc số nguyên không âm có kích thước 2 byte (16 bit)</p>
+        <p>Giá trị nhỏ nhất là '\u0000' (hoặc 0) và giá trị lớn nhất là '\uffff' (hoặc 65,535)..</p>
+        <p>Ví dụ: char nam ='T'</p>
+        <br />
+
+        <h3>Tại sao Java sử dụng Unicode?</h3>
+        <p>Trước Unicode, có nhiều chuẩn ngôn ngữ như ASCII, ISO 8859-1, KOI-8, GB18030, … Điều này gây là hai vấn đề sau:</p>
+        <p>Một giá trị code cụ thể tương ứng với các chữ cái khác nhau trong các chuẩn ngôn ngữ đa dạng.</p>
+        <p>Mã hóa cho các ngôn ngữ với các tập ký tự lớn có độ dài biến đổi. Một số ký tự chung được mã hóa thành các byte đơn, một số khác cần hai hoặc nhiều byte.</p>
+        <p>Để xử lý các vấn đề này, một chuẩn ngôn ngữ mới được phát triển, đó là Unicode. Trong Unicode, ký tự giữ 2 byte, vì thế Java cũng sử dụng 2 byte cho các ký tự.</p>
+        <br />
+
+        <h2>Kiểu dữ liệu byte:</h2>
+        <p>Dùng để lưu dữ liệu kiểu số nguyên có kích thước một byte (8 bit)</p>
+        <p>Giá trị nhỏ nhất là -128 (-2^7) và giá trị lớn nhất là 127. (2^7 -1)</p>
+        <p>Giá trị mặc định là 0</p>
+        <p>Kiểu dữ liệu byte được sử dụng để lưu giữ khoảng trống trong các mảng lớn, chủ yếu là các số nguyên.</p>
+        <p>Ví dụ: byte x = 20 , byte y = -10</p>
+        <br />
+
+        <h2>Kiểu dữ liệu short:</h2>
+        <p>Dùng để lưu dữ liệu có kiểu số nguyên, kích cỡ 2 byte (16 bit).</p>
+        <p>Giá trị nhỏ nhất là -32,768 (-2^15) và giá trị lớn nhất là 32,767 (2^15 -1).</p>
+        <p>Kiểu dữ liệu short cũng có thể được sử dụng để lưu bộ nhớ như kiểu dữ liệu byte.</p>
+        <p>Giá trị mặc định là 0.</p>
+        <p>Ví dụ: short t = 50, short z = -10</p>
+        <br />
+
+        <h2>int:</h2>
+        <p>Dùng để lưu dữ liệu có kiểu số nguyên, kích cỡ 4 byte (32 bit).</p>
+        <p>Giá trị nhỏ nhất là - 2,147,483,648.(-2^31) và giá trị lớn nhất là 2,147,483,647 (2^31 -1)</p>
+        <p>Nói chung, int được sử dụng như là kiểu dữ liệu mặc định cho các giá trị nguyên.</p>
+        <p>Giá trị mặc định là 0.</p>
+        <p>Ví dụ: int a = 5, int b = -50</p>
+        <br />
+
+        <h2>long:</h2>
+        <p>Dùng để lưu dữ liệu có kiểu số nguyên có kích thước lên đến 8 byte.</p>
+        <p>Giá trị nhỏ nhất là -9,223,372,036,854,775,808.(-2^63) và lớn nhất là 9,223,372,036,854,775,807. (2^63 -1)</p>
+        <p>Kiểu này được sử dụng khi cần một dải giá trị rộng hơn int.</p>
+        <p>Giá trị mặc định là 0L.</p>
+        <p>Ví dụ: long a = 100000L, int b = -200000L</p>
+        <br />
+
+        <h2>float:</h2>
+        <p>Dùng để lưu dữ liệu có kiểu số thực, kích cỡ 4 byte (32 bit)</p>
+        <p>Kiểu Float được sử dụng chủ yếu để lưu bộ nhớ trong các mảng rộng hơn các số thực dấu chấm động.</p>
+        <p>Giá trị mặc định là 0.0f.</p>
+        <p>Kiểu Float không bao giờ được sử dụng cho các giá trị chính xác như currency.</p>
+        <p>Ví dụ: float usd = 22.5f</p>
+        <br />
+
+        <h2>double:</h2>
+        <p>Kiểu dữ liệu double được sử dụng để lưu dữ liệu có kiểu số thực có kích thước lên đến 8 byte</p>
+        <p>Nói chung, kiểu dữ liệu này được sử dụng như là kiểu mặc định cho các giá trị decimal.</p>
+        <p>Kiểu double không bao giờ được sử dụng cho các giá trị chính xác như currency.</p>
+        <p>Giá trị mặc định là 0.0d.</p>
+        <p>Ví dụ: double ct = 676.7</p>
+        <br />
+
+        <h2>boolean:</h2>
+        <p>Độ lớn chỉ có 1 bit</p>
+        <p>Dùng để lưu dữ liệu chỉ có hai trạng thái true hoặc false</p>
+        <p>Giá trị mặc định là false.</p>
+        <p>Ví dụ: boolean switch1 = true</p>
+        <br />
+
+        <h2>Kiểu dữ liệu Object trong Java</h2>
+        <p>Các biến đối tượng được tạo bởi sử dụng các constructor đã được định nghĩa của các lớp. Chúng được sử dụng để truy cập các đối tượng. Những biến này được khai báo ở kiểu cụ thể mà không thể thay đổi. Ví dụ: Employee, Puppy, …</p>
+        <p>Giá trị mặc định của bất kỳ biến đối tượng nào là null</p>
+        <p>Một biến đối tượng có thể được sử dụng để tham chiếu tới bất kỳ đối tượng nào trong kiểu được khai báo hoặc bất kỳ kiểu tương thích nào.</p>
+        <p>Ví dụ: Animal animal = new Animal("giraffe");</p>
+        <br />
+
+        <h2>Literal trong Java</h2>
+        <p>Một Literal hay một hằng là một code nguồn biểu diễn một giá trị cố định. Chúng được biểu diễn một cách trực tiếp trong code mà không cần kỹ thuật tính toán nào.</p>
+        <p>Các literal có thể được gán tới bất kỳ kiểu biến gốc nào. Ví dụ:</p>
+        <img src="./code_img_3/11.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>byte, int, long, và short có thể được biểu diễn trong hệ thập phân (cơ số 10), hệ thập lục phân (cơ số 16), hoặc hệ bát phân (cơ số 8).</p>
+        <p>Tiền tố 0 được sử dụng để chỉ hệ bát phân, và tiền tố 0x chỉ dẫn hệ cơ số 16 khi sử dụng những hệ cơ số này cho các literal. Ví dụ:</p>
+        <img src="./code_img_3/12.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>String literal (hằng chuỗi) trong Java được xác định giống như trong hầu hết các ngôn ngữ khác bằng việc bao quanh một chuỗi ký tự liên tục trong trích dẫn kép. Ví dụ về string literal:</p>
+        <img src="./code_img_3/13.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Các hằng chuỗi và hằng ký tự có thể chứa bất kỳ ký tự Unicode nào. Ví dụ:</p>
+        <img src="./code_img_3/14.JPG" alt="hình ảnh thiết lập path">
+        <br />
+        <p>Ngôn ngữ Java hỗ trợ một số dãy thoát đặc biệt cho hằng chuỗi và hằng ký tự như sau:</p>
+        <img src="./code_img_3/15.JPG" alt="hình ảnh thiết lập path">
+        <br />
+
+    </div>
+</body>
+</html>
