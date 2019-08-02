@@ -7,6 +7,7 @@ const devServer = {
   port: 8008,
   host: 'localhost',
   open: true,
+  historyApiFallback: true,
 };
 
 const VENDER_LIBS = [
@@ -38,12 +39,12 @@ module.exports = {
       {
         use: 'babel-loader',
         test: /\.(js|jsx)$/,
-        exclude: '/node_modules/',
+        exclude: /node_modules/,
       },
       {
         use: ['eslint-loader'],
         test: /\.(js|jsx)$/,
-        exclude: ['/node_modules/', '/dist/'],
+        exclude: [/node_modules/, '/dist/'],
       },
       {
         use: ['style-loader', 'css-loader'],

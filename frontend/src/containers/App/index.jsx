@@ -7,6 +7,8 @@ import {
 
 import { createBrowserHistory } from 'history';
 
+import Header from '@components/Header';
+
 import {
   WrapApp,
   WrapBodyApp,
