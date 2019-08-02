@@ -8,6 +8,7 @@ import {
 import { createBrowserHistory } from 'history';
 
 import Header from '@components/Header';
+import TestingTab from '@containers/TestingTab';
 
 import {
   WrapApp,
@@ -34,6 +35,7 @@ export default class index extends Component {
             <Switch style={{ height: '100%' }}>
               {/* <Route path="/" exact component={SharedArticleTab} /> */}
               <Route path="/" exact component={() => (<h1>Hello ReactJS</h1>)} />
+              <Route path="/test" exact component={TestingTab} />
             </Switch>
           </WrapBodyApp>
         </Router>
