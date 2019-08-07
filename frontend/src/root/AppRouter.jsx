@@ -1,23 +1,23 @@
 import React from 'react';
 import {
-  Router,
   Route,
   Switch,
+  HashRouter,
 } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { createHashHistory } from 'history';
 import { Provider } from 'react-redux';
 import App from '@containers/App';
 import store from './rootStore';
 
-const history = createBrowserHistory();
+const history = createHashHistory();
 
 const AppRouter = () => (
   <Provider store={store}>
-    <Router history={history}>
+    <HashRouter history={history}>
       <Switch>
         <Route exact path="/" component={App} />
       </Switch>
-    </Router>
+    </HashRouter>
   </Provider>
 );
 
