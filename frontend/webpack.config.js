@@ -7,7 +7,6 @@ const devServer = {
   port: 8008,
   host: 'localhost',
   open: true,
-  historyApiFallback: true,
 };
 
 const VENDER_LIBS = [
@@ -28,7 +27,7 @@ module.exports = {
   mode: 'development',
   entry: {
     bundle: './src/app.js',
-    vendor: VENDER_LIBS,
+    // vendor: VENDER_LIBS,
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -44,7 +43,7 @@ module.exports = {
       {
         use: ['eslint-loader'],
         test: /\.(js|jsx)$/,
-        exclude: [/node_modules/, '/dist/'],
+        exclude: [/node_modules/, /dist/],
       },
       {
         use: ['style-loader', 'css-loader'],

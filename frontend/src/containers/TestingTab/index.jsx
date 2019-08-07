@@ -40,7 +40,7 @@ import {
 
 const questionExample = {
   content: 'Khi làm việc đội nhóm bạn là người...',
-  answers: [
+  answerOptions: [
     {
       id: 1,
       answer: 'Thu hút người khác',
@@ -73,15 +73,14 @@ class TestingTab extends Component {
   componentDidMount() {
     const { userInfo } = this.props;
     if (!userInfo) this.setState({ isFillInfo: false });
-    // getAllQuestion()
-    //   .then((res) => {
-    //     this.props.getQuestionData(res.data.map((question, i) =>
-    //       ({ ...question, isDone: false, order: i + 1 })));
-    //   })
-    //   .catch(err => this.setState({
-    //     isError: true,
-    //   }));
-    this.props.getQuestionData(new Array({ ...questionExample, isDone: false, order: 1 }));
+    getAllQuestion()
+      .then((res) => {
+        this.props.getQuestionData(res.data.map((question, i) =>
+          ({ ...question, isDone: false, order: i + 1 })));
+      })
+      .catch(err => this.setState({
+        isError: true,
+      }));
   }
 
   // METHODS:
@@ -111,7 +110,7 @@ class TestingTab extends Component {
     return this.props.listQuestion.map((question) => {
       return (
         <QuestionOrder
-          key={question.order}
+          key={question.id}
           question={question}
         />
       );
@@ -134,7 +133,7 @@ class TestingTab extends Component {
 
   render() {
     if (this.state.isError) return <p>Có lỗi xảy ra vui lòng thử lại sau</p>;
-    // if (!this.state.isFillInfo) return <Redirect to="/test/form-user-information" />;
+    if (!this.state.isFillInfo) return <Redirect to="/test/form-user-information" />;
 
     const {
       listQuestion,
@@ -161,8 +160,8 @@ class TestingTab extends Component {
             </WrapLeftProcessBar>
             <WrapRightProcessBar>
               {
-                this.getPercentProcessBar() === 100
-                  ? <ResultBtn onClick={() => {}}><ResultLink to="/test/result">Result</ResultLink></ResultBtn>
+                1 < 2
+                  ? <ResultBtn onClick={() => { }}><ResultLink to="/test/result">Result</ResultLink></ResultBtn>
                   : <CompletingBtn style={{ userSelect: 'none' }}>Completing...</CompletingBtn>
               }
             </WrapRightProcessBar>
